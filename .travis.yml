@@ -1,0 +1,10 @@
+language: go
+
+go_import_path: 4d63.com/strrev
+
+script:
+  - go test -coverprofile=coverage.txt -bench=. -benchmem
+  - go vet
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
