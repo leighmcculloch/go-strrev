@@ -15,7 +15,8 @@ func TestReverse(t *testing.T) {
 		{in: "abcdefg", wantOut: "gfedcba"},
 		{in: "ab丂d", wantOut: "d丂ba"},
 		{in: "abåd", wantOut: "dåba"},
-		// {in: "ab👍🏽d", wantOut: "d👍🏽ba"}, // skin tone modifiers not supported yet
+		// {in: "abo\u0301d", wantOut: "do\u0301ba"}, // multi-rune combining characters
+		// {in: "ab👍🏽d", wantOut: "d👍🏽ba"}, // skin tone modifiers
 	}
 
 	for _, tc := range testCases {
