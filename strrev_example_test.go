@@ -13,3 +13,11 @@ func ExampleReverse() {
 
 	// Output: g丂edcba
 }
+
+func ExampleReverseCombining() {
+	r := strrev.ReverseCombining("abcdef\u0301\u031dg")
+
+	fmt.Println(r)
+
+	// Output: gf̝́edcba
+}
