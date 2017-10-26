@@ -1,4 +1,16 @@
-// Package strrev exports functions for reversing strings.
+/*
+Package strrev exports functions for reversing strings.
+
+To reverse a string:
+
+	strrev.Reverse(...)
+
+To reverse a string containing unicode combining characters where you wish to maintain the ordering of combining characters so that the character the follow is still displayed correctly:
+
+	strrev.ReverseCombining(...)
+
+For more information about unicode combining characters, see: http://unicode.org/faq/char_combmark.html
+*/
 package strrev // import "4d63.com/strrev"
 
 import (
