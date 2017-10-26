@@ -6,7 +6,7 @@ import (
 	"unicode/utf8"
 )
 
-// Reverse reverses the given string, maintaining the bytes within any multibyte unicode characters in their existing order so that the character is still rendered correctly.
+// Reverse reverses the given string, maintaining the bytes within any multibyte unicode characters in their existing order so that the characters are still rendered correctly.
 func Reverse(s string) string {
 	reversed := make([]byte, len(s))
 	i := 0
@@ -20,7 +20,7 @@ func Reverse(s string) string {
 	return string(reversed)
 }
 
-// ReverseBytes reverses the given byte slice, maintaining the bytes within any multibyte unicode characters in their existing order so that the character is still rendered correctly.
+// ReverseBytes reverses the given byte slice, maintaining the bytes within any multibyte unicode characters in their existing order so that the characters are still rendered correctly.
 func ReverseBytes(b []byte) []byte {
 	reversed := make([]byte, len(b))
 	i := 0
@@ -34,7 +34,7 @@ func ReverseBytes(b []byte) []byte {
 	return reversed
 }
 
-// ReverseCombining reverses the given string, maintaining the bytes within any multibyte and combining unicode characters in their existing order so that the character is still rendered correctly.
+// ReverseCombining reverses the given string, maintaining the bytes within any multibyte and combining unicode characters in their existing order so that the characters are still rendered correctly.
 func ReverseCombining(s string) string {
 	reversed := make([]byte, len(s))
 	marks := make([]rune, 0)
@@ -63,7 +63,7 @@ func ReverseCombining(s string) string {
 	return string(reversed)
 }
 
-// ReverseCombiningBytes reverses the given byte slice, maintaining the bytes within any multibyte and combining unicode characters in their existing order so that the character is still rendered correctly.
+// ReverseCombiningBytes reverses the given byte slice, maintaining the bytes within any multibyte and combining unicode characters in their existing order so that the characters are still rendered correctly.
 func ReverseCombiningBytes(b []byte) []byte {
 	reversed := make([]byte, len(b))
 	marks := make([]rune, 0)
